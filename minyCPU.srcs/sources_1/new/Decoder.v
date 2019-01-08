@@ -21,8 +21,8 @@
 
 
 module Decoder(
-    input [5:0] Opcode,
-    output reg [15:0] CU_entry
+    input [5:0] Opcode,//操作码
+    output reg [15:0] CU_entry//输出微程序入口地址
     );
     
     initial

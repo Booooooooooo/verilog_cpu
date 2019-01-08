@@ -1,6 +1,6 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Imem.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Imem
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/wyb/minyCPU/minyCPU.srcs/sim_1/new/test_for_Imem.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module test_for_Imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/wyb/minyCPU/minyCPU.srcs/sim_1/new/test_for_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_for_Decoder
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/wyb/minyCPU/minyCPU.sim/sim_1/behav/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
