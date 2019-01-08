@@ -27,10 +27,16 @@ module CUmem(
     );
     
     reg[40:0] CU_data;
+    //assign Micro_ins = 32'b00000000000000000000000000000000;
     assign Micro_ins[31:25] = 7'b0000000;
     assign Micro_ins[24:0] = CU_data[40:16];
     //assign Micro_ins = 7'b0000000 & CU_data[40:16];
     assign Next_addr = CU_data[15:0];
+    
+    initial
+    begin 
+    CU_data = 41'b00000000000000000000000000000000000000000;
+    end
     
     always @(MPC_out)
     begin
@@ -68,5 +74,6 @@ module CUmem(
         16'b0000011111100000: CU_data <= 41'b00000000000000000000000000000000000000000;
         default:CU_data <= 41'b00000000000000000000000000000010000000001;
         endcase
+        //Micro_ins[24:0] = CU_data[40:16];
      end
 endmodule

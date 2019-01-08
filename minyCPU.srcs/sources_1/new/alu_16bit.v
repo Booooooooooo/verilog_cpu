@@ -40,6 +40,15 @@ module alu_16bit(
     assign CF = (M == 0)?~data_o_arith[16]:1;
     assign ZF = (data_o_arith[15:0] == 16'b0000000000000000)?1:0;
     
+    initial
+    begin
+    data_o_logic = 16'b0000000000000000;
+    data_o_arith = 17'b00000000000000000;
+    data_sub_tmp = 17'b00000000000000000;
+    C_n_arith = 16'b0000000000000000;
+    end
+    
+    
 //    if(M == 1)assign F = data_o_logic;
 //    else assign F = data_o_arith[15:0];
 //    if(M == 0)assign CF = ~data_o_arith[16];

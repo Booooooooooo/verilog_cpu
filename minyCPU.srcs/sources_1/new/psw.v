@@ -40,6 +40,19 @@ module psw(
     reg LO;
     reg LS;
     
+    initial
+    begin
+    jmp = 0;
+    ZF = 0;
+    CF = 0;
+    EQ = 0;
+    NE = 0;
+    HI = 0;
+    HS = 0;
+    LO = 0;
+    LS = 0;
+    end
+    
     always @(ZF, CF)
     begin
         if(ZF == 1) EQ = 1;

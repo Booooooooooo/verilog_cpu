@@ -2,8 +2,8 @@
 # Vivado v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Tue Jan 08 12:34:10 2019
-# Process ID: 4988
+# Start of session at: Tue Jan 08 19:02:03 2019
+# Process ID: 1136
 # Current directory: E:/wyb/minyCPU/minyCPU.runs/synth_1
 # Command line: vivado.exe -log tinycpu.vds -mode batch -messageDb vivado.pb -notrace -source tinycpu.tcl
 # Log file: E:/wyb/minyCPU/minyCPU.runs/synth_1/tinycpu.vds

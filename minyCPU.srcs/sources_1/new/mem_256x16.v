@@ -33,6 +33,7 @@ module mem_256x16(
     //ram_type RAM;
     reg[15:0] RAM [255:0];
     assign Dio = RAM[Address];
+    
 //    always@(Outenab or Address)
 //    begin
 //        if(Outenab == 1) assign Dio = RAM[Address];

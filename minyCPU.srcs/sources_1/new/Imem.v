@@ -30,6 +30,12 @@ module Imem(
     
     reg [15:0] Instra;
     
+    initial
+    begin
+    IR = 16'b0000000000000000;
+    Instra = 16'b0000000000000000;
+    end
+    
     always @(Addr)
     begin
         case(Addr)

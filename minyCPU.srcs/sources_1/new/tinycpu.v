@@ -19,33 +19,17 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+`timescale 1ns / 1ps
 module tinycpu(
     input rst,
     input clk,
-    output [15:0]DBUSout,
-    output reg [15:0]PCout,
-    //output reg [15:0] PC_out,
-    output [15:0]IRout,
-    output [15:0]Aout,
-    output [15:0]Bout
-    //output Condout,
-//    output m0_out,
-//    output m1_out,
-//    output m2_out,
-//    output m3_out,
-//    output m4_out,
-//    output m5_out,
-//    output m6_out,
-//    output m7_out,
-//    output RRO,
-//    output RR1,
-//    output RR2,
-//    output RR3,
-//    output RR4,
-//    output RR5,
-//    output RR6,
-//    output RR7
+    output [15:0] PC_out,
+    output [31:0] Micro_ins
+//    output [15:0]DBUSout,
+//    output reg [15:0]PCout,
+//    output [15:0]IRout,
+//    output [15:0]Aout,
+//    output [15:0]Bout
     );
     
     wire Rd_used;
@@ -88,7 +72,6 @@ module tinycpu(
     wire jmp;
     reg [15:0] PC_in;
     wire [15:0] PC_branch;
-    wire [15:0] PC_out;
     wire [15:0] IR;
     wire [15:0] CU_entry;
     reg [7:0] AR;
@@ -103,37 +86,21 @@ module tinycpu(
     wire [15:0] A;
     wire [15:0] B;
     wire [15:0] F;
-    wire [31:0] Micro_ins;
+    //wire [31:0] Micro_ins;
     
-    initial
-    begin
-        PCout = 0;
-        //IR = 0;
-    end
+//    initial
+//    begin
+    assign PC_out = 16'b0000000000000000;
+    assign Micro_ins = 32'b00000000000000000000000000000000;
+//    end
     
-    assign DBUSout = DBUS_out;
-    //assign PCout = PC_out;
-    assign MPCout = MPC_out;
-    assign IRout = IR;
-    assign Aout = A;
-    assign Bout = B;
-    //assign Condout = 15'b000000000000000 & Cond;
-//    assign m0_out = mem_out_s_0[7:0];
-//    assign m1_out = mem_out_s_1[7:0];
-//    assign m2_out = mem_out_s_2[7:0];
-//    assign m3_out = mem_out_s_3[7:0];
-//    assign m4_out = mem_out_s_4[7:0];
-//    assign m5_out = mem_out_s_5[7:0];
-//    assign m6_out = mem_out_s_6[7:0];
-//    assign m7_out = mem_out_s_7[7:0];
-//    assign RR0 = 16'b0000000000000000 & R0_out_s;
-//    assign RR1 = 16'b0000000000000000 & R1_out_s;
-//    assign RR2 = 16'b0000000000000000 & R2_out_s;
-//    assign RR3 = 16'b0000000000000000 & R3_out_s;
-//    assign RR4 = 16'b0000000000000000 & R4_out_s;
-//    assign RR5 = 16'b0000000000000000 & R5_out_s;
-//    assign RR6 = 16'b0000000000000000 & R6_out_s;
-//    assign RR7 = 16'b0000000000000000 & R7_out_s;
+//    assign DBUSout = DBUS_out;
+//    //assign PCout = PC_out;
+//    //assign MPCout = MPC_out;
+//    assign IRout = IR;
+//    assign Aout = A;
+//    assign Bout = B;
+    
     
     Program_Counter PC(
                         .clk(clk),
@@ -166,6 +133,27 @@ module tinycpu(
                 .MPC_out(MPC_out),
                 .Micro_ins(Micro_ins),
                 .Next_addr(Next_addr));
+                
+    assign M = Micro_ins[24];
+    assign S = Micro_ins[23:20];
+    assign RsB_used = Micro_ins[19];
+    assign RsA_used = Micro_ins[18];
+    assign Rd_used = Micro_ins[17];
+    assign IR_data_en = Micro_ins[16];
+    assign Dmem_out_en = Micro_ins[15];
+    assign B_out_en = Micro_ins[14];
+    assign ALU_out_en = Micro_ins[13];
+    assign AR_en = Micro_ins[12];
+    assign Dmem_outenab = Micro_ins[11];
+    assign Dmem_we = Micro_ins[10];
+    assign Dmem_cs = Micro_ins[9];
+    assign ZF_en = Micro_ins[8];
+    assign CF_en = Micro_ins[7];
+    assign MPC_sel = Micro_ins[6:5];
+    assign MPC_en = Micro_ins[4];
+    assign Imem_en = Micro_ins[3];
+    assign PC_sel = Micro_ins[2:1];
+    assign PC_en = Micro_ins[0];
    
    psw P(
             .clk(clk),
@@ -211,7 +199,7 @@ module tinycpu(
         if(rst == 0) AR <= 8'b00000000;
         else 
         begin
-            PCout=PC_out;
+            //PCout=PC_out;
             if(AR_en == 1) AR <= AR_in;
         end
     end
@@ -311,25 +299,6 @@ module tinycpu(
                     .ZF(ZF),
                     .CF(CF));
     
-    assign M = Micro_ins[24];
-    assign S = Micro_ins[23:20];
-    assign RsB_used = Micro_ins[19];
-    assign RsA_used = Micro_ins[18];
-    assign Rd_used = Micro_ins[17];
-    assign IR_data_en = Micro_ins[16];
-    assign Dmem_out_en = Micro_ins[15];
-    assign B_out_en = Micro_ins[14];
-    assign ALU_out_en = Micro_ins[13];
-    assign AR_en = Micro_ins[12];
-    assign Dmem_outenab = Micro_ins[11];
-    assign Dmem_we = Micro_ins[10];
-    assign Dmem_cs = Micro_ins[9];
-    assign ZF_en = Micro_ins[8];
-    assign CF_en = Micro_ins[7];
-    assign MPC_sel = Micro_ins[6:5];
-    assign MPC_en = Micro_ins[4];
-    assign Imem_en = Micro_ins[3];
-    assign PC_sel = Micro_ins[2:1];
-    assign PC_en = Micro_ins[0];
+    
                                      
 endmodule

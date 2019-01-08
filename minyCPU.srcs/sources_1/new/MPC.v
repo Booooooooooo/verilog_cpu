@@ -30,22 +30,27 @@ module MPC(
     output reg [15:0] MPC_out
     );
     
-    reg [15:0] MPC;
-    always @(MPC)
+//    reg [15:0] MPC;
+//    always @(MPC)
+//    begin
+//        MPC_out = MPC;
+//    end
+
+    initial
     begin
-        MPC_out = MPC;
+    MPC_out = 16'b0000000000000000;
     end
     
     always @(posedge clk)
     begin
-        if(rst == 0) MPC = 16'b0000000000000000;
+        if(rst == 0) MPC_out = 16'b0000000000000000;
         else
         begin
             if(en == 1)
             begin
-                if(MPC_sel == 2'b11) MPC <= MPC_in;
-                else if(MPC_sel == 2'b10) MPC <= Next_addr;
-                else MPC <= 16'b0000000000000000;
+                if(MPC_sel == 2'b11) MPC_out <= MPC_in;
+                else if(MPC_sel == 2'b10) MPC_out <= Next_addr;
+                else MPC_out <= 16'b0000000000000000;
             end
         end
     end

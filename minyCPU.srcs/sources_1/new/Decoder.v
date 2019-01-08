@@ -25,6 +25,11 @@ module Decoder(
     output reg [15:0] CU_entry
     );
     
+    initial
+    begin
+    CU_entry = 16'b0000000000000000;
+    end
+    
     always @(Opcode)
     begin
         case(Opcode)

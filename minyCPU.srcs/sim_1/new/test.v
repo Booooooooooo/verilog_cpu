@@ -23,19 +23,13 @@
 module test;
     reg clk;
     reg rst;
-    wire [15:0]Aout;
-    wire [15:0]Bout;
-    wire [15:0]DBUSout;
     wire [15:0]PCout;
-    wire [15:0]IRout;
+    wire [31:0]Microins;
     tinycpu cpu(
                 .clk(clk),
                 .rst(rst),
-                .DBUSout(DBUSout),
-                .Aout(Aout),
-                .Bout(Bout),
-                .PCout(PCout),
-                .IRout(IRout)
+                .PC_out(PCout),
+                .Micro_ins(Microins)
                 );
     always#(100) clk = ~clk;
     initial

@@ -14,7 +14,7 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 285.203 ; gain = 112.891
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 285.215 ; gain = 113.605
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'tinycpu' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:23]
 INFO: [Synth 8-638] synthesizing module 'Program_Counter' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Program_Counter.v:23]
@@ -28,79 +28,139 @@ INFO: [Synth 8-256] done synthesizing module 'MPC' (4#1) [E:/wyb/minyCPU/minyCPU
 INFO: [Synth 8-638] synthesizing module 'CUmem' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/CUmem.v:23]
 INFO: [Synth 8-256] done synthesizing module 'CUmem' (5#1) [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/CUmem.v:23]
 INFO: [Synth 8-638] synthesizing module 'psw' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/psw.v:23]
-WARNING: [Synth 8-567] referenced signal 'NE' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/psw.v:65]
-WARNING: [Synth 8-567] referenced signal 'HI' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/psw.v:65]
-WARNING: [Synth 8-567] referenced signal 'HS' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/psw.v:65]
-WARNING: [Synth 8-567] referenced signal 'LO' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/psw.v:65]
-WARNING: [Synth 8-567] referenced signal 'LS' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/psw.v:65]
+WARNING: [Synth 8-567] referenced signal 'NE' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/psw.v:78]
+WARNING: [Synth 8-567] referenced signal 'HI' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/psw.v:78]
+WARNING: [Synth 8-567] referenced signal 'HS' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/psw.v:78]
+WARNING: [Synth 8-567] referenced signal 'LO' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/psw.v:78]
+WARNING: [Synth 8-567] referenced signal 'LS' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/psw.v:78]
 INFO: [Synth 8-256] done synthesizing module 'psw' (6#1) [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/psw.v:23]
 INFO: [Synth 8-638] synthesizing module 'mem_256x16' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/mem_256x16.v:23]
 INFO: [Synth 8-256] done synthesizing module 'mem_256x16' (7#1) [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/mem_256x16.v:23]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:220]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:208]
 INFO: [Synth 8-638] synthesizing module 'DBUS' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/DBUS.v:23]
 INFO: [Synth 8-256] done synthesizing module 'DBUS' (8#1) [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/DBUS.v:23]
-WARNING: [Synth 8-567] referenced signal 'jmp' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:231]
-WARNING: [Synth 8-567] referenced signal 'IR' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:231]
-WARNING: [Synth 8-567] referenced signal 'IR_data' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:231]
+WARNING: [Synth 8-567] referenced signal 'jmp' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:219]
+WARNING: [Synth 8-567] referenced signal 'IR' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:219]
+WARNING: [Synth 8-567] referenced signal 'IR_data' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:219]
 INFO: [Synth 8-638] synthesizing module 'Regsfile' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:23]
-WARNING: [Synth 8-567] referenced signal 'R0' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:53]
-WARNING: [Synth 8-567] referenced signal 'R1' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:53]
-WARNING: [Synth 8-567] referenced signal 'R2' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:53]
-WARNING: [Synth 8-567] referenced signal 'R3' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:53]
-WARNING: [Synth 8-567] referenced signal 'R4' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:53]
-WARNING: [Synth 8-567] referenced signal 'R5' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:53]
-WARNING: [Synth 8-567] referenced signal 'R6' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:53]
-WARNING: [Synth 8-567] referenced signal 'R7' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:53]
-WARNING: [Synth 8-567] referenced signal 'R0' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:73]
-WARNING: [Synth 8-567] referenced signal 'R1' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:73]
-WARNING: [Synth 8-567] referenced signal 'R2' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:73]
-WARNING: [Synth 8-567] referenced signal 'R3' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:73]
-WARNING: [Synth 8-567] referenced signal 'R4' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:73]
-WARNING: [Synth 8-567] referenced signal 'R5' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:73]
-WARNING: [Synth 8-567] referenced signal 'R6' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:73]
-WARNING: [Synth 8-567] referenced signal 'R7' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:73]
-WARNING: [Synth 8-3848] Net DR in module/entity Regsfile does not have driver. [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:50]
+WARNING: [Synth 8-567] referenced signal 'R0' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:67]
+WARNING: [Synth 8-567] referenced signal 'R1' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:67]
+WARNING: [Synth 8-567] referenced signal 'R2' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:67]
+WARNING: [Synth 8-567] referenced signal 'R3' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:67]
+WARNING: [Synth 8-567] referenced signal 'R4' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:67]
+WARNING: [Synth 8-567] referenced signal 'R5' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:67]
+WARNING: [Synth 8-567] referenced signal 'R6' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:67]
+WARNING: [Synth 8-567] referenced signal 'R7' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:67]
+WARNING: [Synth 8-567] referenced signal 'R0' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:87]
+WARNING: [Synth 8-567] referenced signal 'R1' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:87]
+WARNING: [Synth 8-567] referenced signal 'R2' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:87]
+WARNING: [Synth 8-567] referenced signal 'R3' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:87]
+WARNING: [Synth 8-567] referenced signal 'R4' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:87]
+WARNING: [Synth 8-567] referenced signal 'R5' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:87]
+WARNING: [Synth 8-567] referenced signal 'R6' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:87]
+WARNING: [Synth 8-567] referenced signal 'R7' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:87]
 INFO: [Synth 8-256] done synthesizing module 'Regsfile' (9#1) [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:23]
 INFO: [Synth 8-638] synthesizing module 'alu_16bit' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/alu_16bit.v:23]
 INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/alu_16bit.v:34]
 INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/alu_16bit.v:35]
-INFO: [Synth 8-226] default block is never used [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/alu_16bit.v:57]
-INFO: [Synth 8-226] default block is never used [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/alu_16bit.v:80]
-WARNING: [Synth 8-567] referenced signal 'data_sub_tmp' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/alu_16bit.v:78]
+INFO: [Synth 8-226] default block is never used [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/alu_16bit.v:66]
+INFO: [Synth 8-226] default block is never used [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/alu_16bit.v:89]
+WARNING: [Synth 8-567] referenced signal 'data_sub_tmp' should be on the sensitivity list [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/alu_16bit.v:87]
 INFO: [Synth 8-256] done synthesizing module 'alu_16bit' (10#1) [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/alu_16bit.v:23]
-WARNING: [Synth 8-3848] Net DBUS_out in module/entity tinycpu does not have driver. [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:99]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net PC_out[0] with 1st driver pin 'tinycpu:/PC/PC_out[0]' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net PC_out[0] with 2nd driver pin 'GND' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net PC_out[0] is connected to constant driver, other driver is ignored [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Micro_ins[0] with 1st driver pin 'tinycpu:/CU/Micro_ins[0]' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Micro_ins[0] with 2nd driver pin 'GND' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Micro_ins[0] is connected to constant driver, other driver is ignored [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net en with 1st driver pin 'tinycpu:/CU/Micro_ins[0]' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:105]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net en with 2nd driver pin 'GND' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:105]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net en is connected to constant driver, other driver is ignored [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:105]
+WARNING: [Synth 8-3848] Net DBUS_out in module/entity tinycpu does not have driver. [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:82]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Addr[0] with 1st driver pin 'tinycpu:/PC/PC_out[0]' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:113]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Addr[0] with 2nd driver pin 'GND' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:113]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Addr[0] is connected to constant driver, other driver is ignored [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:113]
 INFO: [Synth 8-256] done synthesizing module 'tinycpu' (11#1) [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:23]
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[15] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[14] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[13] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[12] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[11] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[10] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[9] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[8] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[7] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[6] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[5] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[4] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[3] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[2] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[1] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[0] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[31] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[30] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[29] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[28] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[27] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[26] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[25] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[24] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[23] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[22] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[21] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[20] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[19] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[18] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[17] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[16] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[15] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[14] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[13] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[12] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[11] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[10] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[9] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[8] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[7] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[6] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[5] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[4] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[3] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[2] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[1] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[0] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 322.527 ; gain = 150.215
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 321.500 ; gain = 149.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 322.527 ; gain = 150.215
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 321.500 ; gain = 149.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7vx485tffg1157-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 322.527 ; gain = 150.215
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 321.500 ; gain = 149.891
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Program_Counter.v:53]
 INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Program_Counter.v:53]
 INFO: [Synth 8-5546] ROM "Instra" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CU_entry" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CU_data" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "jmp" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/alu_16bit.v:80]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/alu_16bit.v:89]
 INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/alu_16bit.v:39]
 INFO: [Synth 8-5546] ROM "ZF" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "AR" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-327] inferring latch for variable 'A_port_reg' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:55]
-WARNING: [Synth 8-327] inferring latch for variable 'B_port_reg' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:75]
-WARNING: [Synth 8-327] inferring latch for variable 'data_sub_tmp_reg' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/alu_16bit.v:89]
-WARNING: [Synth 8-327] inferring latch for variable 'PC_in_reg' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:143]
-WARNING: [Synth 8-327] inferring latch for variable 'AR_in_reg' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:195]
-WARNING: [Synth 8-327] inferring latch for variable 'Dio_reg' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:197]
+INFO: [Synth 8-5545] ROM "AR" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'A_port_reg' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:69]
+WARNING: [Synth 8-327] inferring latch for variable 'B_port_reg' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v:89]
+WARNING: [Synth 8-327] inferring latch for variable 'data_sub_tmp_reg' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/alu_16bit.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'PC_in_reg' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:110]
+WARNING: [Synth 8-327] inferring latch for variable 'AR_in_reg' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:183]
+WARNING: [Synth 8-327] inferring latch for variable 'Dio_reg' [E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v:185]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 350.230 ; gain = 177.918
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 392.543 ; gain = 220.934
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -121,7 +181,7 @@ Detailed RTL Component Info :
 +---XORs : 
 	   2 Input     16 Bit         XORs := 2     
 +---Registers : 
-	               16 Bit    Registers := 12    
+	               16 Bit    Registers := 11    
 	                8 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
 +---Muxes : 
@@ -136,7 +196,6 @@ Detailed RTL Component Info :
 	   2 Input     10 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 1     
 	  16 Input      3 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 1     
 	  16 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 6     
@@ -152,12 +211,10 @@ Hierarchical RTL Component report
 Module tinycpu 
 Detailed RTL Component Info : 
 +---Registers : 
-	               16 Bit    Registers := 1     
 	                8 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     10 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 1     
 Module Program_Counter 
 Detailed RTL Component Info : 
@@ -235,22 +292,64 @@ BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:57 . Memory (MB): peak = 567.043 ; gain = 394.730
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 593.414 ; gain = 421.805
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "ZF" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "ID/CU_entry" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "CU/CU_data" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "AR" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[15] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[14] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[13] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[12] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[11] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[10] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[9] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[8] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[7] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[6] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[5] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[4] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[3] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[2] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[1] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port PC_out[0] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[31] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[30] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[29] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[28] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[27] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[26] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[25] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[24] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[23] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[22] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[21] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[20] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[19] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[18] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[17] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[16] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[15] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[14] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[13] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[12] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[11] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[10] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[9] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[8] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[7] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[6] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[5] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[4] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[3] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[2] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[1] driven by constant 0
+WARNING: [Synth 8-3917] design tinycpu has port Micro_ins[0] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:58 . Memory (MB): peak = 567.043 ; gain = 394.730
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 593.414 ; gain = 421.805
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:38 ; elapsed = 00:00:58 . Memory (MB): peak = 567.043 ; gain = 394.730
+Finished Parallel Reinference  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 593.414 ; gain = 421.805
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -262,109 +361,16 @@ No constraint files found.
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-264] enable of latch \Dio_reg[0]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[0]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[1]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[1]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[2]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[2]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[3]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[3]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[4]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[4]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[5]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[5]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[6]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[6]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[7]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[7]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[8]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[8]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[9]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[9]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[10]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[10]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[11]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[11]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[12]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[12]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[13]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[13]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[14]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[14]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[15]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[15]  is always disabled
-INFO: [Synth 8-3886] merging instance '\Microaddr/MPC_reg[9] ' (FDE) to '\Microaddr/MPC_reg[15] '
-INFO: [Synth 8-3886] merging instance '\Microaddr/MPC_reg[3] ' (FDE) to '\Microaddr/MPC_reg[15] '
-INFO: [Synth 8-3886] merging instance '\Microaddr/MPC_reg[2] ' (FDE) to '\Microaddr/MPC_reg[15] '
-INFO: [Synth 8-3886] merging instance '\Microaddr/MPC_reg[15] ' (FDE) to '\Microaddr/MPC_reg[14] '
-INFO: [Synth 8-3886] merging instance '\Microaddr/MPC_reg[14] ' (FDE) to '\Microaddr/MPC_reg[13] '
-INFO: [Synth 8-3886] merging instance '\Microaddr/MPC_reg[13] ' (FDE) to '\Microaddr/MPC_reg[12] '
-INFO: [Synth 8-3886] merging instance '\Microaddr/MPC_reg[11] ' (FDE) to '\Microaddr/MPC_reg[12] '
-WARNING: [Synth 8-264] enable of latch \Dio_reg[0]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[0]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[1]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[1]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[2]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[2]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[3]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[3]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[4]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[4]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[5]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[5]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[6]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[6]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[7]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[7]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[8]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[8]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[9]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[9]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[10]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[10]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[11]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[11]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[12]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[12]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[13]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[13]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[14]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[14]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[15]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[15]  is always disabled
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/A_port_reg[15] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/A_port_reg[14] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/A_port_reg[13] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/A_port_reg[12] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/A_port_reg[11] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/A_port_reg[10] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/A_port_reg[9] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/A_port_reg[8] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/A_port_reg[7] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/A_port_reg[6] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/A_port_reg[5] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/A_port_reg[4] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/A_port_reg[3] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/A_port_reg[2] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/A_port_reg[1] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/A_port_reg[0] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/B_port_reg[15] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/B_port_reg[14] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/B_port_reg[13] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/B_port_reg[12] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/B_port_reg[11] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/B_port_reg[10] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/B_port_reg[9] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/B_port_reg[8] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/B_port_reg[7] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/B_port_reg[6] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/B_port_reg[5] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/B_port_reg[4] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/B_port_reg[3] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/B_port_reg[2] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/B_port_reg[1] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\General_Registers/B_port_reg[0] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\PC_in_reg[9] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\PC_in_reg[8] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\PC_in_reg[7] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\PC_in_reg[6] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\PC_in_reg[5] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\PC_in_reg[4] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\PC_in_reg[3] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\PC_in_reg[2] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\PC_in_reg[1] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\PC_in_reg[0] ) is unused and will be removed from module tinycpu.
 WARNING: [Synth 8-3332] Sequential element (\AR_in_reg[7] ) is unused and will be removed from module tinycpu.
 WARNING: [Synth 8-3332] Sequential element (\AR_in_reg[6] ) is unused and will be removed from module tinycpu.
 WARNING: [Synth 8-3332] Sequential element (\AR_in_reg[5] ) is unused and will be removed from module tinycpu.
@@ -373,84 +379,6 @@ WARNING: [Synth 8-3332] Sequential element (\AR_in_reg[3] ) is unused and will b
 WARNING: [Synth 8-3332] Sequential element (\AR_in_reg[2] ) is unused and will be removed from module tinycpu.
 WARNING: [Synth 8-3332] Sequential element (\AR_in_reg[1] ) is unused and will be removed from module tinycpu.
 WARNING: [Synth 8-3332] Sequential element (\AR_in_reg[0] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\Microaddr/MPC_reg[15] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\Microaddr/MPC_reg[14] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\Microaddr/MPC_reg[13] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\Microaddr/MPC_reg[11] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\Microaddr/MPC_reg[9] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\Microaddr/MPC_reg[3] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\Microaddr/MPC_reg[2] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\AR_reg[7] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\AR_reg[6] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\AR_reg[5] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\AR_reg[4] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\AR_reg[3] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\AR_reg[2] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\AR_reg[1] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-3332] Sequential element (\AR_reg[0] ) is unused and will be removed from module tinycpu.
-WARNING: [Synth 8-264] enable of latch \Dio_reg[0]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[0]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[1]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[1]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[2]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[2]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[3]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[3]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[4]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[4]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[5]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[5]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[6]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[6]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[7]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[7]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[8]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[8]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[9]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[9]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[10]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[10]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[11]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[11]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[12]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[12]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[13]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[13]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[14]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[14]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[15]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[15]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[0]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[0]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[1]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Dio_reg[1]  is always disabled
-INFO: [Common 17-14] Message 'Synth 8-264' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
----------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:01:04 . Memory (MB): peak = 595.535 ; gain = 423.223
----------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:42 ; elapsed = 00:01:04 . Memory (MB): peak = 595.535 ; gain = 423.223
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
-No constraint files found.
----------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:01:04 . Memory (MB): peak = 595.535 ; gain = 423.223
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Technology Mapping
----------------------------------------------------------------------------------
 WARNING: [Synth 8-3332] Sequential element (\Dio_reg[15] ) is unused and will be removed from module tinycpu.
 WARNING: [Synth 8-3332] Sequential element (\Dio_reg[14] ) is unused and will be removed from module tinycpu.
 WARNING: [Synth 8-3332] Sequential element (\Dio_reg[13] ) is unused and will be removed from module tinycpu.
@@ -467,6 +395,32 @@ WARNING: [Synth 8-3332] Sequential element (\Dio_reg[3] ) is unused and will be 
 WARNING: [Synth 8-3332] Sequential element (\Dio_reg[2] ) is unused and will be removed from module tinycpu.
 WARNING: [Synth 8-3332] Sequential element (\Dio_reg[1] ) is unused and will be removed from module tinycpu.
 WARNING: [Synth 8-3332] Sequential element (\Dio_reg[0] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\ICache/IR_reg[15] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\ICache/IR_reg[14] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\ICache/IR_reg[13] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\ICache/IR_reg[12] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\ICache/IR_reg[11] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\ICache/IR_reg[10] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\ICache/IR_reg[9] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\ICache/IR_reg[8] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\ICache/IR_reg[7] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\ICache/IR_reg[6] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\ICache/IR_reg[5] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\ICache/IR_reg[4] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\ICache/IR_reg[3] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\ICache/IR_reg[2] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\ICache/IR_reg[1] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\ICache/IR_reg[0] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\P/CF_reg ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\P/ZF_reg ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\AR_reg[7] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\AR_reg[6] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\AR_reg[5] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\AR_reg[4] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\AR_reg[3] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\AR_reg[2] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\AR_reg[1] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\AR_reg[0] ) is unused and will be removed from module tinycpu.
 WARNING: [Synth 8-3332] Sequential element (\General_Registers/R7_reg[15] ) is unused and will be removed from module tinycpu.
 WARNING: [Synth 8-3332] Sequential element (\General_Registers/R7_reg[14] ) is unused and will be removed from module tinycpu.
 WARNING: [Synth 8-3332] Sequential element (\General_Registers/R7_reg[13] ) is unused and will be removed from module tinycpu.
@@ -496,18 +450,55 @@ WARNING: [Synth 8-3332] Sequential element (\General_Registers/R6_reg[6] ) is un
 WARNING: [Synth 8-3332] Sequential element (\General_Registers/R6_reg[5] ) is unused and will be removed from module tinycpu.
 WARNING: [Synth 8-3332] Sequential element (\General_Registers/R6_reg[4] ) is unused and will be removed from module tinycpu.
 WARNING: [Synth 8-3332] Sequential element (\General_Registers/R6_reg[3] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\General_Registers/R6_reg[2] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\General_Registers/R6_reg[1] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\General_Registers/R6_reg[0] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\General_Registers/R5_reg[15] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\General_Registers/R5_reg[14] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\General_Registers/R5_reg[13] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\General_Registers/R5_reg[12] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\General_Registers/R5_reg[11] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\General_Registers/R5_reg[10] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\General_Registers/R5_reg[9] ) is unused and will be removed from module tinycpu.
+WARNING: [Synth 8-3332] Sequential element (\General_Registers/R5_reg[8] ) is unused and will be removed from module tinycpu.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:01:05 . Memory (MB): peak = 597.141 ; gain = 424.828
+Finished Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 607.168 ; gain = 435.559
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:43 ; elapsed = 00:01:05 . Memory (MB): peak = 597.141 ; gain = 424.828
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 607.168 ; gain = 435.559
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:43 ; elapsed = 00:01:05 . Memory (MB): peak = 597.141 ; gain = 424.828
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 607.168 ; gain = 435.559
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 607.988 ; gain = 436.379
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 607.988 ; gain = 436.379
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 607.988 ; gain = 436.379
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -524,7 +515,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:01:07 . Memory (MB): peak = 597.141 ; gain = 424.828
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 607.988 ; gain = 436.379
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -537,7 +528,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:01:07 . Memory (MB): peak = 597.141 ; gain = 424.828
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 607.988 ; gain = 436.379
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -549,25 +540,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:01:07 . Memory (MB): peak = 597.141 ; gain = 424.828
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 607.988 ; gain = 436.379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:01:07 . Memory (MB): peak = 597.141 ; gain = 424.828
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 607.988 ; gain = 436.379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:01:07 . Memory (MB): peak = 597.141 ; gain = 424.828
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 607.988 ; gain = 436.379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:01:07 . Memory (MB): peak = 597.141 ; gain = 424.828
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 607.988 ; gain = 436.379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -583,51 +574,42 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |BUFG   |     1|
-|2     |CARRY4 |    15|
-|3     |LUT1   |    37|
-|4     |LUT2   |    60|
-|5     |LUT3   |    41|
-|6     |LUT4   |    36|
-|7     |LUT5   |    36|
-|8     |LUT6   |   162|
-|9     |FDRE   |    59|
-|10    |LD     |    27|
-|11    |IBUF   |     2|
-|12    |OBUF   |    64|
-|13    |OBUFT  |    16|
+|1     |CARRY4 |    11|
+|2     |LUT1   |     3|
+|3     |LUT2   |     3|
+|4     |LUT3   |    16|
+|5     |LUT4   |     4|
+|6     |LUT5   |    15|
+|7     |LUT6   |    86|
+|8     |LD     |    17|
+|9     |OBUF   |    48|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+------------+----------------+------+
-|      |Instance    |Module          |Cells |
-+------+------------+----------------+------+
-|1     |top         |                |   556|
-|2     |  ALU       |alu_16bit       |   155|
-|3     |  ICache    |Imem            |    40|
-|4     |  Microaddr |MPC             |   161|
-|5     |  P         |psw             |     4|
-|6     |  PC        |Program_Counter |    86|
-+------+------------+----------------+------+
++------+---------+----------+------+
+|      |Instance |Module    |Cells |
++------+---------+----------+------+
+|1     |top      |          |   203|
+|2     |  ALU    |alu_16bit |   155|
++------+---------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:01:07 . Memory (MB): peak = 597.141 ; gain = 424.828
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 607.988 ; gain = 436.379
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 457 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:55 . Memory (MB): peak = 597.141 ; gain = 388.184
-Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:01:07 . Memory (MB): peak = 597.141 ; gain = 424.828
+Synthesis finished with 0 errors, 12 critical warnings and 349 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 607.988 ; gain = 399.109
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 607.988 ; gain = 436.379
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 1 inverter(s) to 10 load pin(s).
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 27 instances were transformed.
+  A total of 17 instances were transformed.
   LD => LDCE: 17 instances
-  LD => LDCE (inverted pins: G): 10 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-61 Infos, 234 Warnings, 0 Critical Warnings and 0 Errors encountered.
+48 Infos, 229 Warnings, 12 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:06 . Memory (MB): peak = 676.008 ; gain = 470.570
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.150 . Memory (MB): peak = 676.008 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Jan 08 12:35:30 2019...
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 672.961 ; gain = 467.238
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 672.961 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 08 19:02:43 2019...
