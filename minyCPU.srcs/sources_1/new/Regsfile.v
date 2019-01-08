@@ -108,25 +108,25 @@ module Regsfile(
     begin
         if(rst == 1'b0)
             begin
-            R0 <= 16'b0000000000000000;
-            R1 <= 16'b0000000000000000;
-            R2 <= 16'b0000000000000000;
-            R3 <= 16'b0000000000000000;
-            R4 <= 16'b0000000000000000;
-            R5 <= 16'b0000000000000000;
-            R6 <= 16'b0000000000000000;
-            R7 <= 16'b0000000000000000;
+            R0 = 16'b0000000000000000;
+            R1 = 16'b0000000000000000;
+            R2 = 16'b0000000000000000;
+            R3 = 16'b0000000000000000;
+            R4 = 16'b0000000000000000;
+            R5 = 16'b0000000000000000;
+            R6 = 16'b0000000000000000;
+            R7 = 16'b0000000000000000;
             end
         else
             begin
-                if(R0_en == 1'b1) R0 <= DR;
-                else if(R1_en == 1'b1) R1 <= DR;
-                else if(R2_en == 1'b1) R2 <= DR;
-                else if(R3_en == 1'b1) R3 <= DR;
-                else if(R4_en == 1'b1) R4 <= DR;
-                else if(R5_en == 1'b1) R5 <= DR;
-                else if(R6_en == 1'b1) R6 <= DR;
-                else if(R7_en == 1'b1) R7 <= DR;
+                if(R0_en == 1'b1) R0 = DR;
+                else if(R1_en == 1'b1) R1 = DR;
+                else if(R2_en == 1'b1) R2 = DR;
+                else if(R3_en == 1'b1) R3 = DR;
+                else if(R4_en == 1'b1) R4 = DR;
+                else if(R5_en == 1'b1) R5 = DR;
+                else if(R6_en == 1'b1) R6 = DR;
+                else if(R7_en == 1'b1) R7 = DR;
             end
     end
 endmodule

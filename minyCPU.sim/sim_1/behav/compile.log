@@ -1,6 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/mem_256x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_256x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Regsfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regsfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/psw.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module psw
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/MPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imem
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/Decoder.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Decoder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/wyb/minyCPU/minyCPU.srcs/sim_1/new/test_for_Decoder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module test_for_Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/DBUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DBUS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/alu_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/CUmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/wyb/minyCPU/minyCPU.srcs/sources_1/new/tinycpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tinycpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/wyb/minyCPU/minyCPU.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/wyb/minyCPU/minyCPU.sim/sim_1/behav/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl

@@ -43,15 +43,15 @@ module Program_Counter(
     
     always @ (posedge clk)
     begin
-        if(rst == 0)PC_out <= 16'b0000000000000000;
+        if(rst == 0)PC_out = 16'b0000000000000000;
         else
         begin
              //PC_out <= PC_out + 1;
             if(en == 1)
             begin
-                if(PC_sel == 2'b11)PC_out <= PC_in;
-                else if(PC_sel == 2'b10)PC_out <= PC_out + PC_branch;
-                else PC_out <= PC_out + 1;
+                if(PC_sel == 2'b11)PC_out = PC_in;
+                else if(PC_sel == 2'b10)PC_out = PC_out + PC_branch;
+                else PC_out = PC_out + 1;
             end
         end
     end

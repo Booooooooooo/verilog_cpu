@@ -25,11 +25,24 @@ module test;
     reg rst;
     wire [15:0]PCout;
     wire [31:0]Microins;
+    wire M0;
+    wire M1;
+    wire M2;
+    wire M3;
+    wire M4;
+    wire M5;
+    
     tinycpu cpu(
                 .clk(clk),
                 .rst(rst),
                 .PC_out(PCout),
-                .Micro_ins(Microins)
+                .Micro_ins(Microins),
+                .M0(M0),
+                .M1(M1),
+                .M2(M2),
+                .M3(M3),
+                .M4(M4),
+                .M5(M5)
                 );
     always#(100) clk = ~clk;
     initial

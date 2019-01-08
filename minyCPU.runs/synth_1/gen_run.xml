@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7vx485tffg1157-1" LaunchTime="1546945312">
+<GenRun Id="synth_1" LaunchPart="xc7vx485tffg1157-1" LaunchTime="1546958627">
   <File Type="RDS-DCP" Name="tinycpu.dcp"/>
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
   <File Type="RDS-UTIL-PB" Name="tinycpu_utilization_synth.pb"/>
@@ -13,6 +13,13 @@
   <File Type="VDS-TIMING-PB" Name="tinycpu_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/mem_256x16.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/Regsfile.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -35,13 +42,6 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/MPC.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/mem_256x16.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

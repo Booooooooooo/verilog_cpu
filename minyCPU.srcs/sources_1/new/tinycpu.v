@@ -19,17 +19,17 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-`timescale 1ns / 1ps
 module tinycpu(
     input rst,
     input clk,
     output [15:0] PC_out,
-    output [31:0] Micro_ins
-//    output [15:0]DBUSout,
-//    output reg [15:0]PCout,
-//    output [15:0]IRout,
-//    output [15:0]Aout,
-//    output [15:0]Bout
+    output [31:0] Micro_ins,
+    output [255:0]M0,
+    output [255:0]M1,
+    output [255:0]M2,
+    output [255:0]M3,
+    output [255:0]M4,
+    output [255:0]M5
     );
     
     wire Rd_used;
@@ -90,8 +90,8 @@ module tinycpu(
     
 //    initial
 //    begin
-    assign PC_out = 16'b0000000000000000;
-    assign Micro_ins = 32'b00000000000000000000000000000000;
+//    PC_out = 16'b0000000000000000;
+//    Micro_ins = 32'b00000000000000000000000000000000;
 //    end
     
 //    assign DBUSout = DBUS_out;
@@ -176,7 +176,14 @@ module tinycpu(
                     .we(Dmem_we),
                     .Outenab(Dmem_outenab),
                     .Address(AR),
-                    .Dio(Dmem_out));
+                    .Dio(Dmem_out),
+                    .M0(M0),
+                    .M1(M1),
+                    .M2(M2),
+                    .M3(M3),
+                    .M4(M4),
+                    .M5(M5)
+                    );
                     
     always @(AR_en, DBUS_out)
     begin

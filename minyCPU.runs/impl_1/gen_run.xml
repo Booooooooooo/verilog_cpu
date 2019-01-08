@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7vx485tffg1157-1" LaunchTime="1546958715">
+  <File Type="OPT-DCP" Name="tinycpu_opt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="ROUTE-DCP" Name="tinycpu_routed.dcp"/>
+  <File Type="PA-TCL" Name="tinycpu.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="tinycpu_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="tinycpu_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="tinycpu_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="tinycpu.hwdef"/>
+  <File Type="PWROPT-DCP" Name="tinycpu_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="tinycpu_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="tinycpu_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="tinycpu_placed.dcp"/>
+  <File Type="PLACE-IO" Name="tinycpu_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="tinycpu_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="tinycpu_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="tinycpu_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="tinycpu_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="tinycpu_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="tinycpu_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="tinycpu_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="tinycpu_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="tinycpu_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="tinycpu_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="tinycpu.vdi"/>
+  <File Type="PHYSOPT-DRC" Name="tinycpu_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="tinycpu_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-DRC" Name="tinycpu_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="tinycpu_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="tinycpu_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="tinycpu_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="tinycpu_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="tinycpu_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="tinycpu_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="tinycpu_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="tinycpu_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="tinycpu_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="tinycpu_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="tinycpu_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="tinycpu_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="tinycpu_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="tinycpu_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="tinycpu.bit"/>
+  <File Type="BG-BIN" Name="tinycpu.bin"/>
+  <File Type="BITSTR-MSK" Name="tinycpu.msk"/>
+  <File Type="BITSTR-RBT" Name="tinycpu.rbt"/>
+  <File Type="BITSTR-NKY" Name="tinycpu.nky"/>
+  <File Type="BITSTR-BMM" Name="tinycpu_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="tinycpu.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="tinycpu.sysdef"/>
+  <File Type="BG-BGN" Name="tinycpu.bgn"/>
+  <File Type="BG-DRC" Name="tinycpu.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/mem_256x16.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Regsfile.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/psw.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Program_Counter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MPC.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Imem.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Decoder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DBUS.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/alu_16bit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CUmem.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tinycpu.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="tinycpu"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

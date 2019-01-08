@@ -48,9 +48,9 @@ module MPC(
         begin
             if(en == 1)
             begin
-                if(MPC_sel == 2'b11) MPC_out <= MPC_in;
-                else if(MPC_sel == 2'b10) MPC_out <= Next_addr;
-                else MPC_out <= 16'b0000000000000000;
+                if(MPC_sel == 2'b11) MPC_out = MPC_in;
+                else if(MPC_sel == 2'b10) MPC_out = Next_addr;
+                else MPC_out = 16'b0000000000000000;
             end
         end
     end
