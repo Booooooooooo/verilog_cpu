@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="8520000001fs"></ZoomEndTime>
+      <Cursor1Time time="32300000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="15" />
+   <wvobject db_ref_id="1" fp_name="/test/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test/Microins" type="array">
+      <obj_property name="ElementShortName">Microins[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Microins[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test/M0" type="logic">
+      <obj_property name="ElementShortName">M0</obj_property>
+      <obj_property name="ObjectShortName">M0</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test/M1" type="logic">
+      <obj_property name="ElementShortName">M1</obj_property>
+      <obj_property name="ObjectShortName">M1</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test/M2" type="logic">
+      <obj_property name="ElementShortName">M2</obj_property>
+      <obj_property name="ObjectShortName">M2</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test/M3" type="logic">
+      <obj_property name="ElementShortName">M3</obj_property>
+      <obj_property name="ObjectShortName">M3</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test/M4" type="logic">
+      <obj_property name="ElementShortName">M4</obj_property>
+      <obj_property name="ObjectShortName">M4</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test/M5" type="logic">
+      <obj_property name="ElementShortName">M5</obj_property>
+      <obj_property name="ObjectShortName">M5</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test/cpu/Dmem/Dio" type="array">
+      <obj_property name="ElementShortName">Dio[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Dio[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test/cpu/Dmem/Address" type="array">
+      <obj_property name="ElementShortName">Address[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Address[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test/cpu/Dmem/we" type="logic">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test/cpu/Dmem/Outenab" type="logic">
+      <obj_property name="ElementShortName">Outenab</obj_property>
+      <obj_property name="ObjectShortName">Outenab</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test/cpu/CU/MPC_out" type="array">
+      <obj_property name="ElementShortName">MPC_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">MPC_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/test/PCout" type="array">
+      <obj_property name="ElementShortName">PCout[15:0]</obj_property>
+      <obj_property name="ObjectShortName">PCout[15:0]</obj_property>
+   </wvobject>
+</wave_config>

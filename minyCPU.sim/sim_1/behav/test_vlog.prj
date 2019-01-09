@@ -1,9 +1,9 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  "../../../minyCPU.srcs/sources_1/new/mem_256x16.v"
 verilog xil_defaultlib  "../../../minyCPU.srcs/sources_1/new/Regsfile.v"
 verilog xil_defaultlib  "../../../minyCPU.srcs/sources_1/new/psw.v"
 verilog xil_defaultlib  "../../../minyCPU.srcs/sources_1/new/Program_Counter.v"
 verilog xil_defaultlib  "../../../minyCPU.srcs/sources_1/new/MPC.v"
+verilog xil_defaultlib  "../../../minyCPU.srcs/sources_1/new/mem_256x16.v"
 verilog xil_defaultlib  "../../../minyCPU.srcs/sources_1/new/Imem.v"
 verilog xil_defaultlib  "../../../minyCPU.srcs/sources_1/new/Decoder.v"
 verilog xil_defaultlib  "../../../minyCPU.srcs/sources_1/new/DBUS.v"

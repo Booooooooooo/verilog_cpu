@@ -24,12 +24,12 @@ module tinycpu(
     input clk,
     output [15:0] PC_out,
     output [31:0] Micro_ins,
-    output [255:0]M0,
-    output [255:0]M1,
-    output [255:0]M2,
-    output [255:0]M3,
-    output [255:0]M4,
-    output [255:0]M5
+    output [15:0]M0,
+    output [15:0]M1,
+    output [15:0]M2,
+    output [15:0]M3,
+    output [15:0]M4,
+    output [15:0]M5
     );
     
     wire Rd_used;
@@ -187,13 +187,13 @@ module tinycpu(
                     
     always @(AR_en, DBUS_out)
     begin
-        if(AR_en == 1'b1) AR_in <= DBUS_out[7:0];
+        if(AR_en == 1'b1) AR_in = DBUS_out[7:0];
     end
     assign Dmem_out = Dio;
     
     always @(Dmem_cs, Dmem_we, Dmem_outenab,Dmem_in)
     begin
-        if(Dmem_cs == 1'b1 && Dmem_we == 1'b1 && Dmem_outenab == 1'b0) Dio <= Dmem_in;
+        if(Dmem_cs == 1'b1 && Dmem_we == 1'b1 && Dmem_outenab == 1'b0) Dio = Dmem_in;
     end
     
     assign Dmem_in = DBUS_out;
@@ -203,11 +203,11 @@ module tinycpu(
     
     always @(posedge clk)
     begin
-        if(rst == 0) AR <= 8'b00000000;
+        if(rst == 0) AR = 8'b00000000;
         else 
         begin
             //PCout=PC_out;
-            if(AR_en == 1) AR <= AR_in;
+            if(AR_en == 1) AR = AR_in;
         end
     end
     
@@ -227,16 +227,16 @@ module tinycpu(
     begin
         if(jmp == 1)
         begin
-            IR_data[15:10] <= 6'b000000;
-            IR_data[9:0] <= IR[9:0];
+            IR_data[15:10] = 6'b000000;
+            IR_data[9:0] = IR[9:0];
 //            PC_in <= (jmp == 1)?IR_data:PC_out;
-            if(jmp == 1) PC_in <= IR_data;
-            else PC_in <= PC_out;
+            if(jmp == 1) PC_in = IR_data;
+            else PC_in = PC_out + 1;
         end
         else 
         begin
-            IR_data[15:7] <= 9'b000000000;
-            IR_data[6:0] <= IR[6:0];
+            IR_data[15:7] = 9'b000000000;
+            IR_data[6:0] = IR[6:0];
         end
     end
     
@@ -266,36 +266,10 @@ module tinycpu(
     assign R5_en = (Rd_used == 1'b1 && IR[9:7] == 3'b101)?1:0;
     assign R6_en = (Rd_used == 1'b1 && IR[9:7] == 3'b110)?1:0;
     assign R7_en = (Rd_used == 1'b1 && IR[9:7] == 3'b111)?1:0;
-//    if(Rd_used == 1'b1 && IR[9:7] == 3'b000) assign R0_en = 1;
-//    else assign R0_en = 0;
-//    if(Rd_used == 1'b1 && IR[9:7] == 3'b001) assign R1_en = 1;
-//    else assign R1_en = 0;
-//    if(Rd_used == 1 && IR[9:7] == 3'b010) assign R2_en = 1;
-//    else assign R2_en = 0;
-//    if(Rd_used == 1 && IR[9:7] == 3'b011) assign R3_en = 1;
-//    else assign R3_en = 0;
-//    if(Rd_used == 1 && IR[9:7] == 3'b100) assign R4_en = 1;
-//    else assign R4_en = 0;
-//    if(Rd_used == 1 && IR[9:7] == 3'b101) assign R5_en = 1;
-//    else assign R5_en = 0;
-//    if(Rd_used == 1 && IR[9:7] == 3'b110) assign R6_en = 1;
-//    else assign R6_en = 0;
-//    if(Rd_used == 1 && IR[9:7] == 3'b111) assign R7_en = 1;
-//    else assign R7_en = 0;
-           
-//    always @(IR, RsA_used)
-//    begin
-//        if(RsA_used == 1'b1)A_sel = IR[9:7];
-//        else A_sel = 3'b000;
-//    end
+
     assign A_sel = (RsA_used == 1'b1)?IR[9:7]:3'b000;
     assign B_sel = (RsB_used == 1'b1)?IR[6:4]:3'b000;
-//    always @(IR, RsB_used)
-//    begin
-//        if(RsB_used == 1'b1)B_sel = IR[6:4];
-//        else B_sel = 3'b000;
-//    end
-    
+
     alu_16bit ALU(
                     .A(A),
                     .B(B),
